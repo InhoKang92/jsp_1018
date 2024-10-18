@@ -1,0 +1,62 @@
+package com.mdh.controller;
+
+import com.mdh.controller.action.Action;
+import com.mdh.controller.action.MdhIdCheckAction;
+import com.mdh.controller.action.MdhIndexAction;
+import com.mdh.controller.action.MdhJoinAction;
+import com.mdh.controller.action.MdhJoinFormAction;
+import com.mdh.controller.action.MdhLoginAction;
+import com.mdh.controller.action.MdhLoginFormAction;
+import com.mdh.controller.action.MdhLogoutAction;
+import com.mdh.controller.action.MdhSubAction;
+import com.mdh.controller.action.MdhUpdateAction;
+import com.mdh.controller.action.MdhUpdateFormAction;
+import com.mdh.controller.action.ReviewListAction;
+import com.mdh.controller.action.ReviewWriteFormAction;
+
+public class ActionFactory {
+
+	private static ActionFactory instance = new ActionFactory();
+
+	private ActionFactory() {
+		super();
+	}
+
+	public static ActionFactory getInstance() {
+		return instance;
+	}
+
+	public Action getAction(String command) {
+		Action action = null;
+		System.out.println("ActionFactory :" + command);
+		
+		if (command.equals("mdh_index")) {
+			action = new MdhIndexAction();
+		} else if(command.equals("mdh_sub")) {
+			action = new MdhSubAction();
+		} else if(command.equals("mdh_login_form")) {
+			action = new MdhLoginFormAction();
+		} else if(command.equals("mdh_join_form")) {
+			action = new MdhJoinFormAction();
+		} else if(command.equals("mdh_login")) {
+			action = new MdhLoginAction();
+		} else if(command.equals("mdh_idcheck")) {
+			action = new MdhIdCheckAction();
+		} else if(command.equals("mdh_join")) {
+			action = new MdhJoinAction();
+		} else if(command.equals("mdh_logout")) {
+			action = new MdhLogoutAction();
+		} else if(command.equals("mdh_update_form")) {
+			action = new MdhUpdateFormAction();
+		} else if(command.equals("mdh_update")) {
+			action = new MdhUpdateAction();
+		} else if(command.equals("review_list")) {
+			action = new ReviewListAction();
+		} else if (command.equals("review_write_form")) {
+			action = new ReviewWriteFormAction();
+		} 
+		
+		return action;
+	}
+	
+}

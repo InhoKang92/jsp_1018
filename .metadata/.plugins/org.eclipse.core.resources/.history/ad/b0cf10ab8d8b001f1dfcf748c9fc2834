@@ -1,0 +1,5 @@
+package com.mdh.controller.action;
+
+public class BoardCheckPassAction {
+
+}

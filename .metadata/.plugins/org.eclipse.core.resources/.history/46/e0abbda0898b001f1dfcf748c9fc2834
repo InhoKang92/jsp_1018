@@ -1,0 +1,46 @@
+package json;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.json.simple.JSONObject;
+
+import jsonClass.Main_cate;
+
+
+@WebServlet("/Main_Cate_Json")
+public class Main_Cate_Json extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Main_cate mc1 = new Main_cate("img/mctg_1.png", "주방");
+		Main_cate mc2 = new Main_cate("img/mctg_2.png", "패브릭");
+		Main_cate mc3 = new Main_cate("img/mctg_3.png", "가구");
+		Main_cate mc4 = new Main_cate("img/mctg_4.png", "키즈");
+		Main_cate mc5 = new Main_cate("img/mctg_5.png", "린넨앤키친");
+		Main_cate mc6 = new Main_cate("img/mctg_6.png", "욕실・생활");
+		Main_cate mc7 = new Main_cate("img/mctg_7.png", "홈데코");
+		Main_cate mc8 = new Main_cate("img/mctg_8.png", "수납・정리");
+		Main_cate mc9 = new Main_cate("img/mctg_9.png", "가전・라이프");
+		Main_cate mc10 = new Main_cate("img/mctg_10.png", "펫본");
+        
+        JSONObject jObj = new JSONObject();
+        jObj.put("human", human);
+        
+        resp.setContentType("application/x-json; charset=utf-8");
+        resp.getWriter().print(jObj);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	}
+
+}

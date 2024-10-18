@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/login.css">
+
+<title>모던하우스 회원 로그인</title>
+</head>
+<body>
+
+<form>
+        <div class="login_box">
+            <div class="member_btn_box">
+                <button class="mem">회원 로그인</button>
+                <button class="notmem">비회원 주문 조회</button>
+            </div>
+            <div class="input_box">
+                <input class="id_input" type="text" placeholder="아이디">
+                <input class="pw_input" type="text" placeholder="비밀번호">
+                <div class="save_box">
+                    <input id="check" type="checkbox">
+                    <label for="check"></label>
+                    <p class="save">아이디 저장</p>
+                </div>
+            
+            </div>
+            <div class="login_btn">로그인</div>
+            <div class="etc_box">
+                <button>아이디 찾기</button>
+                <button>비밀번호 찾기</button>
+                <button>회원가입</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

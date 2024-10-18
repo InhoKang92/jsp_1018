@@ -1,0 +1,44 @@
+package com.mdh.controller;
+
+import com.mdh.controller.action.Action;
+import com.mdh.controller.action.MdhIdCheckAction;
+import com.mdh.controller.action.MdhIndexAction;
+import com.mdh.controller.action.MdhJoinFormAction;
+import com.mdh.controller.action.MdhLoginAction;
+import com.mdh.controller.action.MdhLoginFormAction;
+import com.mdh.controller.action.MdhSubAction;
+
+public class ActionFactory {
+
+	private static ActionFactory instance = new ActionFactory();
+
+	private ActionFactory() {
+		super();
+	}
+
+	public static ActionFactory getInstance() {
+		return instance;
+	}
+
+	public Action getAction(String command) {
+		Action action = null;
+		System.out.println("ActionFactory :" + command);
+		
+		if (command.equals("mdh_index")) {
+			action = new MdhIndexAction();
+		} else if(command.equals("mdh_sub")) {
+			action = new MdhSubAction();
+		} else if(command.equals("mdh_login_form")) {
+			action = new MdhLoginFormAction();
+		} else if(command.equals("mdh_join_form")) {
+			action = new MdhJoinFormAction();
+		} else if(command.equals("mdh_login")) {
+			action = new MdhLoginAction();
+		} else if(command.equals("mdh_idcheck")) {
+			action = new MdhIdCheckAction();
+		}
+		
+		return action;
+	}
+	
+}

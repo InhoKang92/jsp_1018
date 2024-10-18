@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/join.css">
+
+<title>모던하우스 회원가입</title>
+</head>
+<body>
+
+      
+      <form method="post" name="frm" class="join_box">
+      '*' 표시 항목은 필수 입력 항목입니다.
+        
+      </form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1275px;
+    margin: 200px auto 300px;
+}
+.title {
+	width: 100%;
+    background-color: none;
+    border-bottom: 2px solid #2fb8bd;
+    color: #2fb8bd;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+.cover {
+	width: 80%;
+	margin-top: 44px;
+}
+
+.cover tr {
+	width: 100%;
+}
+.cover th {
+	background: #2fb8bd;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+}

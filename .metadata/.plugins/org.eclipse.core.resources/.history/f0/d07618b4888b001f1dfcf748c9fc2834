@@ -1,0 +1,15 @@
+package jsonClass;
+
+public class Main_cate {
+
+	private String url;
+	private String name;
+	
+	public Main_cate() {}
+	
+	public Main_cate(String url, String name) {
+		
+	}
+    
+	
+}

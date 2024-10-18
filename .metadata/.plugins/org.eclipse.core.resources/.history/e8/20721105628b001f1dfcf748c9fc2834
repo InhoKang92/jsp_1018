@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.join_box {
+    width: 500px;
+    margin: 300px auto;
+}
+.join_table {
+	width: 100%;	
+}

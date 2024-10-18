@@ -1,0 +1,9 @@
+package com.mdh.dao;
+
+public class ModernDAO {
+	private BoardDAO() {}
+	private static BoardDAO instance = new BoardDAO();
+	public static BoardDAO getInstance() {
+		return instance;
+	}
+}

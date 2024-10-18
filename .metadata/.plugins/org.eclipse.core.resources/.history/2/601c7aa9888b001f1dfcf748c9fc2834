@@ -1,0 +1,9 @@
+package jsonClass;
+
+public class Main_cate {
+
+	private String url;
+	private String name;
+    
+	
+}

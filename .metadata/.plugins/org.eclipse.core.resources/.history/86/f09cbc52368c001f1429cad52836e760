@@ -1,0 +1,5 @@
+package com.mdh.dto;
+
+public class JoinVO {
+
+}

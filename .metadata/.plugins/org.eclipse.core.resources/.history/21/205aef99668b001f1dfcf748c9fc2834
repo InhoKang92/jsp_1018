@@ -1,0 +1,9 @@
+package com.mdh.dao;
+
+public class ModernDAO {
+	private ModernDAO() {}
+	private static ModernDAO instance = new ModernDAO();
+	public static ModernDAO getInstance() {
+		return instance;
+	}
+}

@@ -1,0 +1,11 @@
+package com.mdh.dao;
+
+public class ReviewDAO {
+
+	private ReviewDAO() {}
+	private static ReviewDAO instance = new ReviewDAO();
+	public static ReviewDAO getInstance() {
+		return instance;
+	}
+	
+}
